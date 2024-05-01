@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val navController  = rememberNnewavController()
+            val navController  = rememberNavController()
             var isLoading by remember { mutableStateOf(true) }
             var destination by remember { mutableStateOf<String>("") }
 
